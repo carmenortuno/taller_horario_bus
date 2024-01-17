@@ -43,6 +43,13 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation ("androidx.navigation:navigation-fragment:2.7.6")
     implementation ("androidx.navigation:navigation-ui:2.7.6")
+    implementation ("androidx.room:room-runtime:2.6.1")
+
+
+    // To use Kotlin annotation processing tool (kapt)
+    //apt ("androidx.room:room-compiler:2.6.1")
+    // To use Kotlin Symbol Processing (KSP)
+    //ksp ("androidx.room:room-compiler:2.6.1")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
