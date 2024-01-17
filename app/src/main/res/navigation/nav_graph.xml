@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listadoParadas">
 
+    <fragment
+        android:id="@+id/listadoParadas"
+        android:name="com.example.taller_horario_bus.ListadoParadas"
+        android:label="fragment_listado_paradas"
+        tools:layout="@layout/fragment_listado_paradas" >
+        <action
+            android:id="@+id/action_listadoParadas_to_horarioParada"
+            app:destination="@id/horarioParada" />
+    </fragment>
+    <fragment
+        android:id="@+id/horarioParada"
+        android:name="com.example.taller_horario_bus.HorarioParada"
+        android:label="fragment_horario_parada"
+        tools:layout="@layout/fragment_horario_parada" />
 </navigation>
