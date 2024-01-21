@@ -5,7 +5,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity
+@Entity(tableName = "horario_bus")
 data class Horario(
     @PrimaryKey val id: Int,
     @NonNull @ColumnInfo(name = "nombre_parada") val nombreParada: String,
